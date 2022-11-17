@@ -1,7 +1,7 @@
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/* rem 和 em 不依賴於媒體查詢中的 html 字體大小! Instead, 1rem = 1em = 16px */
 
 /**************************/
-/* BELOW 1344px (Smaller desktops) */
+/* BELOW 1344px  */
 /**************************/
 
 @media (max-width: 84em) {
@@ -19,7 +19,7 @@
 }
 
 /**************************/
-/* BELOW 1200px (Landscape Tablets) */
+/* BELOW 1200px  */
 /**************************/
 
 @media (max-width: 75em) {
@@ -59,7 +59,7 @@
 }
 
 /**************************/
-/* BELOW 944px (Tablets) */
+/* BELOW 944px  */
 /**************************/
 
 @media (max-width: 59em) {
@@ -124,6 +124,7 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 999 ;
   }
 
   .main-nav {
@@ -141,16 +142,15 @@
     transition: all 0.5s ease-in;
 
     /* Hide navigation */
-    /* Allows NO transitions at all */
-    /* display: none; */
+    /* display: none; 不能搭配transitions */
 
-    /* 1) Hide it visually */
+    /* 1) 在視覺上隱藏它 */
     opacity: 0;
 
-    /* 2) Make it unaccessible to mouse and keyboard */
+    /* 2) 使其無法訪問鼠標和鍵盤 */
     pointer-events: none;
 
-    /* 3) Hide it from screen readers */
+    /* 3) 對屏幕閱讀器隱藏它 */
     visibility: hidden;
   }
 
@@ -181,7 +181,7 @@
 }
 
 /**************************/
-/* BELOW 704px (Smaller tablets) */
+/* BELOW 704px  */
 /**************************/
 
 @media (max-width: 44em) {
@@ -220,7 +220,7 @@
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 544px  */
 /**************************/
 
 @media (max-width: 34em) {
